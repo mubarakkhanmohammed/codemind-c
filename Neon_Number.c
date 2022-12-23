@@ -3,13 +3,12 @@ int main()
 {
     int n,rem,sum=0;
     scanf("%d",&n);
-    int temp=n*n;
-    while(temp>0)
+    int sq=n*n;
+    while(sq>0)
     {
-        rem=temp%10;
+        rem=sq%10;
         sum=sum+rem;
-        temp=temp/10;
-        
+        sq=sq/10;
     }
     if(n==sum)
     {
